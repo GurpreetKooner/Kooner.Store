@@ -1,0 +1,184 @@
+* {
+  text-decoration: none;
+}
+
+.navbar {
+  padding-left: 3%;
+  padding-right: 3%;
+  padding-top: 10px;
+  align-content: start;
+  box-shadow: 0 1px 3px -2px black;
+}
+
+.navdiv {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.logo {
+  flex: 1;
+  font-family: fantasy;
+  font-size: 40px;
+  font-weight: 200;
+  color: #4169e1;
+  margin: 0;
+  padding: 0;
+}
+
+.searchBarDiv {
+  flex: 2;
+  display: inline-flex;
+  height: 32px;
+  border-color: darkgray;
+  border-style: solid;
+  border-width: 2px;
+  width: 30%;
+  max-width: 400px;
+  min-width: 200px;
+  margin: 0 5px;
+}
+
+.searchBar,
+.searchBar:focus {
+  font-size: 15px;
+  font-family: "Signika Negative", sans-serif;
+  font-weight: 600;
+  padding: 10px;
+  background-color: transparent;
+  border: 0px solid;
+  outline: none;
+  width: 100%;
+}
+
+ul {
+  padding-left: 0px;
+}
+
+.navOption-parent {
+  flex: 1;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  padding: 0;
+  margin: 0;
+}
+
+.navOption {
+  font-size: 20px;
+  list-style: none;
+  display: inline;
+  margin-left: 15%;
+}
+
+.navImage {
+  width: 25px;
+  height: 25px;
+  position: relative;
+  display: inline;
+  top: 0;
+}
+
+.itemType {
+  list-style: none;
+  display: inline;
+  margin-right: 40px;
+  font-weight: 600;
+}
+.itemTypeText {
+  font-size: 20px;
+  color: black;
+  align-items: center;
+  margin-right: auto;
+}
+.item-type-selected {
+  font-size: 20px;
+  font-weight: 800;
+  color: rgb(69, 69, 69);
+  text-decoration: underline;
+}
+
+.nav-cart-count {
+  width: 20px;
+  height: 18px;
+  border-radius: 10px;
+  font-size: 12px;
+  font-weight: 700;
+  background: red;
+  color: white;
+  position: absolute;
+  top: -13px;
+  left: 13px;
+  right: -5px;
+  align-content: center;
+  text-align: center;
+}
+
+@media (max-width: 1280px) {
+  .logo {
+    font-size: 30px;
+  }
+  .searchBarDiv {
+    height: 25px;
+    max-width: 250px;
+  }
+
+  .searchBar,
+  .searchBar:focus {
+    font-size: 11px;
+    padding: 8px;
+  }
+  .navImage {
+    width: 20px;
+    height: 20px;
+  }
+
+  .itemType {
+    margin-right: 30px;
+  }
+  .itemTypeText {
+    font-size: 17px;
+  }
+  .item-type-selected {
+    font-size: 17px;
+  }
+  .nav-cart-count {
+    width: 17px;
+    height: 15px;
+    top: -9px;
+    left: 12px;
+    right: -5px;
+    font-size: 10px;
+  }
+}
+
+@media (max-width: 885px) {
+  .logo {
+    font-size: 25px;
+  }
+  .searchBarDiv {
+    height: 22px;
+    max-width: 200px;
+  }
+  .searchBar,
+  .searchBar:focus {
+    font-size: 10px;
+    padding: 7px;
+  }
+  .navImage {
+    width: 18px;
+    height: 18px;
+  }
+  .itemType {
+    margin-right: 20px;
+  }
+  .itemType-last{
+    margin-right: 0;
+  }
+  .itemTypeText {
+    font-size: 14px;
+  }
+  .item-type-selected {
+    font-size: 14px;
+  }
+}
